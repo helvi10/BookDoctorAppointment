@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/patient_information_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_spacing_md">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ui_body_black_bold"
+            android:textSize="@dimen/ui_title"
+            android:text="@string/please_select_one_of_the_following_option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline1"
+            style="@style/ui_divider_grey_1"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header"/>
+
+        <LinearLayout
+            android:id="@+id/edit_patient_info_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_spacing_md"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline1"/>
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline2"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_edit_contact"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_header2"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/member_details"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline2" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/member_number_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/member_number"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:paddingStart="@dimen/ui_spacing_sm"
+            android:paddingEnd="@dimen/ui_spacing_sm"
+            android:background="@drawable/edittext_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header2"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/insurance_number_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/insurance_number"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:paddingStart="@dimen/ui_spacing_sm"
+            android:paddingEnd="@dimen/ui_spacing_sm"
+            android:background="@drawable/edittext_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/member_number_text_input_layout"
+            />
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline3"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/insurance_number_text_input_layout"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_patient_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/address"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:paddingStart="@dimen/ui_spacing_sm"
+            android:paddingEnd="@dimen/ui_spacing_sm"
+            android:background="@drawable/edittext_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline3"
+            />
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline4"
+            style="@style/ui_divider_grey_1"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_address_layout"/>
+
+
+        <LinearLayout
+            android:id="@+id/edit_patient_info_select_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_spacing_md"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline4"/>
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline5"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_select_deal"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_patient_save_to_information"
+            style="@style/ui_button_primary"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/save_information"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline5"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_patient_cancel"
+            style="@style/ui_secondary_button"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_save_to_information"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

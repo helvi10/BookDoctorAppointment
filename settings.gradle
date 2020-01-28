@@ -1,0 +1,2 @@
+include ':app', ':doctor'
+rootProject.name='BookDocApp'

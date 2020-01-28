@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customer_information_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_spacing_md">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_customer_info_header"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_information"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_header1"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_customer_info_header" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_header2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_spacing_sm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_header1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_header3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_spacing_sm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_header2" />
+
+        <View
+            android:id="@+id/edit_customer_info_header_underline1"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_header3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_search_for_doc"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_for_doctors"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_customer_info_header_underline1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_search_for_doc_subheader"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_doctors_that_are_in_network"
+            android:layout_marginTop="@dimen/ui_spacing_sm"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/ui_blue"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_search_for_doc" />
+
+
+        <View
+            android:id="@+id/edit_patient_info_underline1"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_search_for_doc_subheader" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_header"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_patient_information"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_underline1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_subheader"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_name_contact_details_and_more"
+            android:layout_marginTop="@dimen/ui_spacing_sm"
+            android:textColor="@color/ui_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header" />
+
+        <View
+            android:id="@+id/edit_patient_info_header_underline2"
+            style="@style/ui_divider_grey_7"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_subheader" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/edit_patient_info_learn_more"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_more_about"
+            android:layout_marginTop="@dimen/ui_spacing_sm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_header_underline2" />
+
+
+        <View
+            android:id="@+id/edit_patient_info_undeline_2"
+            style="@style/ui_divider_grey_1"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_learn_more"/>
+
+        <LinearLayout
+            android:id="@+id/edit_patient_info_deals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_spacing_md"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_undeline_2"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_patient_search_button"
+            style="@style/ui_button_primary"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/search_doctors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_info_deals"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_patient_cancel_button"
+            style="@style/ui_secondary_button"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_patient_search_button"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

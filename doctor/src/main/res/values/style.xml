@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ui_divider_grey_1" parent="parent_divider">
+        <item name="android:layout_height">@dimen/ui_divider_height_small</item>
+        <item name="android:background">@color/ui_ua_neutral_gray</item>
+    </style>
+
+    <style name="parent_divider">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ui_body_black_bold">
+        <item name="android:textColor">@color/ui_ua_neutral_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ui_body_black">
+        <item name="android:textColor">@color/ui_ua_neutral_black</item>
+    </style>
+
+    <style name="ui_divider_grey_7" parent="parent_divider">
+        <item name="android:layout_height">@dimen/ui_spacing_8</item>
+        <item name="android:background">@color/ui_ua_neutral_gray</item>
+    </style>
+
+    <style name="ui_primary_button" parent="ui_button">
+        <item name="rippleColor">@color/ui_pacific_blue</item>
+        <item name="android:background">@color/ui_blue</item>
+        <item name="android:textColor">@color/ui_neutral_white</item>
+    </style>
+
+    <style name="ui_secondary_button">
+        <item name="android:background">@color/colorYello</item>
+        <item name="android:textColor">@color/ui_ua_neutral_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ui_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox" parent="Base.Widget.MaterialComponents.TextInputLayout">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+        <item name="boxCollapsedPaddingTop">0dp</item>
+    </style>
+
+    <style name="ui_button_primary">
+        <item name="android:textColor"> @color/ui_neutral_white</item>
+        <item name="android:background">@color/colorRhapsodyBlue</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/ui_spacing_md"
+    android:layout_marginBottom="@dimen/ui_spacing_md"
+    android:orientation="vertical"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customer_information_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_spacing_md"
+        android:layout_marginRight="@dimen/ui_spacing_md"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_header"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_details"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_subheader"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/contact_details_header_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_header"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customer_contact_details_phone_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:paddingStart="@dimen/ui_spacing_sm"
+            android:paddingEnd="@dimen/ui_spacing_sm"
+            android:background="@drawable/edittext_border"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_subheader"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/customer_edit_contact_email_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:paddingStart="@dimen/ui_spacing_sm"
+            android:paddingEnd="@dimen/ui_spacing_sm"
+            android:background="@drawable/edittext_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_details_phone_number_layout"
+            />
+
+        <View
+            android:id="@+id/customer_contact_information_dividerline1"
+            style="@style/ui_divider_grey_1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_edit_contact_email_text_input_layout"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_sms_terms_condition"
+            style="@style/ui_body_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_chevron_right"
+            android:gravity="center_vertical"
+            android:text="@string/sms_terms_and_conditions"
+            android:textColor="@color/ui_ua_neutral_black"
+            android:textSize="16sp"
+            android:paddingTop="@dimen/ui_spacing_md"
+            android:paddingBottom="@dimen/ui_spacing_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_contact_information_dividerline1"
+            android:drawableEnd="@drawable/ic_chevron_right" />
+
+        <View
+            android:id="@+id/customer_contact_information_dividerline2"
+            style="@style/ui_divider_grey_1"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_contact_information_sms_terms_condition"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact_information_privacy_policy"
+            style="@style/ui_body_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/ui_ua_neutral_black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/ui_spacing_md"
+            android:paddingBottom="@dimen/ui_spacing_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_contact_information_dividerline2"
+            android:drawableRight="@drawable/ic_chevron_right" />
+
+        <View
+            android:id="@+id/customer_contact_information_dividerline4"
+            style="@style/ui_divider_grey_1"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customer_contact_information_privacy_policy"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_contact_save"
+            style="@style/ui_button_primary"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:text="@string/continue_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_contact_information_dividerline4"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_contact_cancel"
+            style="@style/ui_secondary_button"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_contact_save"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

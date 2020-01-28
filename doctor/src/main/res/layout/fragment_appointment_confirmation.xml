@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/ui_spacing_md"
+        android:paddingTop="@dimen/ui_spacing_48"
+        android:paddingEnd="@dimen/ui_spacing_md"
+        android:paddingBottom="@dimen/ui_spacing_md">
+
+        <ImageView
+            android:id="@+id/patient_confirmation_doctor_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_spacing_290"
+            android:src="@drawable/ic_doctor1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_confirmation_doctor_name"
+            style="@style/ui_body_black_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/ui_spacing_48"
+            android:textSize="@dimen/ui_spacing_32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patient_confirmation_doctor_photo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_confirmation_doctor_type"
+            style="@style/ui_body_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patient_confirmation_doctor_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_confirmation_doctor_reviews"
+            style="@style/ui_body_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patient_confirmation_doctor_type" />
+
+        <View
+            android:id="@+id/patient_confirmation_doctor_underline2"
+            style="@style/ui_divider_grey_1"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patient_confirmation_doctor_reviews" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/patient_confirmation_doctor_availability_text"
+            style="@style/ui_body_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/ui_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patient_confirmation_doctor_underline2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/patient_confirmation_confirm_button"
+            style="@style/ui_button_primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/confirm_appointment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patient_confirmation_doctor_availability_text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/patient_confirmation_cancel_button"
+            style="@style/ui_secondary_button"
+            android:layout_height="@dimen/ui_spacing_48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/ui_spacing_md"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patient_confirmation_confirm_button"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

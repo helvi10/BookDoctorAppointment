@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/ui_ua_neutral_black</item>
+        <item name="android:textSize">@dimen/ui_title</item>
+        <item name="colorControlNormal">@color/ui_ua_neutral_gray</item>
+        <item name="colorControlActivated">@color/ui_ua_neutral_black</item>
+    </style>
+</resources>

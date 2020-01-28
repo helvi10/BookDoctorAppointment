@@ -1,0 +1,40 @@
+<resources>
+    <!-- Patient Information -->
+    <string name="please_select_one_of_the_following_option">Please select one of the following option</string>
+    <string name="customer_number">Customer Number</string>
+    <string name="member_details">Member Details</string>
+    <string name="save_information">SAVE INFOMRATION</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="sms_terms_and_conditions">SMS terms and conditions</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="continue_button">Continue</string>
+    <string name="patient_information">Patient Information</string>
+    <string name="confirm_appointment">CONFIRM APPOINTMENT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="done">DONE</string>
+    <string name="search_doctors">SEARCH DOCTORS</string>
+    <string name="learn_more_about">Learn more about</string>
+    <string name="insurance_name_contact_details_and_more"><![CDATA[Insurance name,contact details and more >]]></string>
+    <string name="find_doctors_that_are_in_network"><![CDATA[Find doctors that are in-network >]]></string>
+    <string name="search_for_doctors">Search for Doctors</string>
+    <string name="error_message">User Credentials are invalid </string>
+
+    <!-- Edit Patient Information -->
+    <string name="edit_contact_details"> Edit Contact Details</string>
+    <string name="edit_patient_information">Edit Patient Information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile_phone_number">Mobile phone number</string>
+    <string name="address">Address</string>
+    <string name="member_number">Member number</string>
+    <string name="insurance_number">Insurance number</string>
+    <string name="insurance_plan">Insurance plan</string>
+    <string name="contact_details_header_description">Please let us know the best way to reach you, for important appointment status updates or notifications.</string>
+    <string name="membership_has_its_benefits">Membership has its benefits</string>
+    <string name="view_options"><![CDATA[View options]]></string>
+    <string name="learn_more_about_content"> BookDoc has offered our patients the ability to book their appointment at times that are most convenient for them. This has greatly enhanced the patient experience.We created BookDoc to solve patient problems, beginning with online appointment-booking – and we haven’t stopped building since. With BookDoc, you can see doctors’ open appointment times and book instantly online, make informed choices with verified reviews, and stay on top of important checkups with tailored reminders. And those pesky waiting room forms? Fill them out online, just once, and keep them forever.
+</string>
+    <string name="available_today">Available  Tomorrow</string>
+    <string name="confirmed_appointment"> , we have got you confirmed for your appointment</string>
+
+</resources>

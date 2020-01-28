@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment"
+    android:padding="@dimen/ui_spacing_md">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ui_body_black_bold"
+        android:textSize="@dimen/ui_title"
+        android:text="@string/log_in"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_username_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ui_spacing_md"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/user_name"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_password_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ui_spacing_md"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_info_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/ui_spacing_16"
+        android:visibility="gone"
+        android:textColor="@color/colorRed"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_info_button"
+        style="@style/ui_button_primary"
+        android:layout_height="@dimen/ui_spacing_48"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/ui_spacing_md"
+        android:text="@string/log_in"
+        />
+
+</LinearLayout>

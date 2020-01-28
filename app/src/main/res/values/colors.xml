@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPacificBlue">#00B2A9</color>
+    <color name="colorPlatinum_gray">#7C878E</color>
+    <color name="colorPremiumPurple">#412D7D</color>
+    <color name="colorRhapsodyBlue">#0C2340</color>
+    <color name="colorRhapsodyBluetransparent">#D90C2340</color>
+    <color name="colorAtlanticAmethyst">#6244BB</color>
+    <color name="ui_blue">#0033A0</color>
+    <color name="ui_ua_neutral_black">#000000</color>
+</resources>

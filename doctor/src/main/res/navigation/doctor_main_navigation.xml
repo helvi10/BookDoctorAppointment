@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_main_navigation"
+    app:startDestination="@id/PatientInfoFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/PatientInfoFragment"
+        android:name="com.example.doctor.ui.patientInfo.PatientInfoFragment"
+        android:label="Patient Information"
+        tools:layout="@layout/fragment_patient_info">
+        <action
+            android:id="@+id/PatientInfoFragment_to_DoctorListFragment"
+            app:destination="@+id/DoctorListFragment" />
+        <action
+            android:id="@+id/BookAppointmentFragment_to_EditPatientInfoFragment"
+            app:destination="@+id/EditPatientInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/PatientInfoFragment_to_CommonInfoFragment"
+            app:destination="@+id/CommonDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DoctorListFragment"
+        android:name="com.example.doctor.ui.doctorList.DoctorListFragment"
+        android:label="Find Doctors"
+        tools:layout="@layout/fragment_doctor_list">
+        <action
+            android:id="@+id/DoctorListFragmentto_BookAppointmentFragment"
+            app:destination="@+id/BookAppointmentFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BookAppointmentFragment"
+        android:name="com.example.doctor.ui.bookAppointment.BookAppointmentFragment"
+        android:label="Book Appointment"
+        tools:layout="@layout/fragment_appointment_confirmation">
+        <action
+            android:id="@+id/BookAppointmentFragment_to_AppointmentConfirmedFragment"
+            app:destination="@+id/AppointmentConfirmedFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AppointmentConfirmedFragment"
+        android:name="com.example.doctor.ui.appointmentConfirmation.AppointmentConfirmationFragment"
+        android:label="Appointment Confirmed"
+        tools:layout="@layout/fragment_appointment_confirmed"/>
+
+    <fragment
+        android:id="@+id/EditPatientInfoFragment"
+        android:name="com.example.doctor.ui.editPatientInfo.EditPatientInfoFragment"
+        android:label="Edit Patient Information"
+        tools:layout="@layout/fragment_edit_patient_info">
+        <action
+            android:id="@+id/EditPatientInfoFragment_to_EditContactDetailsFragment"
+            app:destination="@+id/EditContactDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/EditPatientInfoFragment_to_SingleItemListFragment"
+            app:destination="@+id/SingleItemListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditContactDetailsFragment"
+        android:name="com.example.doctor.ui.editContactDetails.EditContactDetailsFragment"
+        android:label="Edit Contact Details"
+        tools:layout="@layout/fragment_edit_contact_details"/>
+
+    <fragment
+        android:id="@+id/SingleItemListFragment"
+        android:name="com.example.doctor.ui.singleItemList.SingleItemListFragment"
+        android:label="Select Insurance plan"
+        tools:layout="@layout/fragment_single_item_list"/>
+
+    <fragment
+        android:id="@+id/CommonDetailFragment"
+        android:name="com.example.cust.ui.commonDetails.CommonDetailsFragment"
+        tools:layout="@layout/fragment_common_details"/>
+
+
+</navigation>
